@@ -111,4 +111,38 @@
     return UIDeviceFamilyUnknown;
 }
 
+-(bool) hasCellular {
+    NSString *modelIdentifier = [self modelIdentifier];
+    if ([modelIdentifier hasPrefix:@"iPhone"]) return YES;
+    if ([modelIdentifier hasPrefix:@"iPod"]) return NO;
+
+    if ([modelIdentifier isEqualToString:@"iPad1,1"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad2,1"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad2,2"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad2,3"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad2,4"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad2,5"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad2,6"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad2,7"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad3,1"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad3,2"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad3,3"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad3,4"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad3,5"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad3,6"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad4,1"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad4,2"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad2,5"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad2,6"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad2,7"])      return YES;
+    if ([modelIdentifier isEqualToString:@"iPad4,4"])      return NO;
+    if ([modelIdentifier isEqualToString:@"iPad4,5"])      return YES;
+    
+    if ([modelIdentifier isEqualToString:@"i386"])         return NO;
+    if ([modelIdentifier isEqualToString:@"x86_64"])       return NO;
+
+    //err to the side of returning YES in case a new device is released before it is updated
+    return YES;
+}
+
 @end
