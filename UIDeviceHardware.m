@@ -7,7 +7,7 @@
  */
 
 #include <sys/sysctl.h>
-#import "UIDevice-Hardware.h"
+#import "UIDeviceHardware.h"
 
 @interface UIDevice (Hardward)
 
@@ -98,6 +98,7 @@
     if ([modelIdentifier isEqualToString:@"iPod3,1"])      return @"iPod touch 3G";
     if ([modelIdentifier isEqualToString:@"iPod4,1"])      return @"iPod touch 4G";
     if ([modelIdentifier isEqualToString:@"iPod5,1"])      return @"iPod touch 5G";
+    if ([modelIdentifier isEqualToString:@"iPod7,1"])      return @"iPod touch 6G"; // iPod6,1 is never released
     
     // Simulator
     if ([modelIdentifier hasSuffix:@"86"] || [modelIdentifier isEqual:@"x86_64"])
