@@ -19,7 +19,8 @@ static NSDictionary *modelIdentifierNameMap;
 
 @implementation UIDevice (Hardware)
 
-+ (void)initialize {
++ (void)initialize
+{
     modelIdentifierNameMap = @{
        // iPhone http://theiphonewiki.com/wiki/IPhone
 
@@ -128,6 +129,7 @@ static NSDictionary *modelIdentifierNameMap;
     if ([modelIdentifier hasPrefix:@"iPhone"]) return UIDeviceFamilyiPhone;
     if ([modelIdentifier hasPrefix:@"iPod"]) return UIDeviceFamilyiPod;
     if ([modelIdentifier hasPrefix:@"iPad"]) return UIDeviceFamilyiPad;
+    if ([modelIdentifier hasPrefix:@"AppleTV"]) return UIDeviceFamilyAppleTV;
     return UIDeviceFamilyUnknown;
 }
 
