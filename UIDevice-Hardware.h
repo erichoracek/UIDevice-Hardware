@@ -13,6 +13,8 @@ typedef NS_ENUM(NSUInteger, UIDeviceFamily) {
     UIDeviceFamilyiPod,
     UIDeviceFamilyiPad,
     UIDeviceFamilyAppleTV,
+    UIDeviceFamilySimulatoriPad,
+    UIDeviceFamilySimulatoriPhone,
     UIDeviceFamilyUnknown,
 };
 
