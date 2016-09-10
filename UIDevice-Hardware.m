@@ -2,7 +2,7 @@
  Erica Sadun, http://ericasadun.com
  iPhone Developer's Cookbook, 6.x Edition
  BSD License, Use at your own risk
- 
+
  Modified by Eric Horacek for Monospace Ltd. on 2/4/13
  */
 
@@ -21,12 +21,12 @@
 {
     size_t size;
     sysctlbyname(typeSpecifier, NULL, &size, NULL, 0);
-    
+
     char *answer = malloc(size);
     sysctlbyname(typeSpecifier, answer, &size, NULL, 0);
-    
+
     NSString *results = [NSString stringWithCString:answer encoding: NSUTF8StringEncoding];
-    
+
     free(answer);
     return results;
 }
@@ -44,7 +44,7 @@
 - (NSString *)modelNameForModelIdentifier:(NSString *)modelIdentifier
 {
     // iPhone http://theiphonewiki.com/wiki/IPhone
-    
+
     if ([modelIdentifier isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
     if ([modelIdentifier isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
     if ([modelIdentifier isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
@@ -62,9 +62,12 @@
     if ([modelIdentifier isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
     if ([modelIdentifier isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([modelIdentifier isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
+    if ([modelIdentifier isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
+    if ([modelIdentifier isEqualToString:@"iPhone9.2"])    return @"iPhone 7 Plus (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone9.3"])    return @"iPhone 7 (Global)";
 
     // iPad http://theiphonewiki.com/wiki/IPad
-    
+
     if ([modelIdentifier isEqualToString:@"iPad1,1"])      return @"iPad 1G";
     if ([modelIdentifier isEqualToString:@"iPad2,1"])      return @"iPad 2 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
@@ -76,14 +79,14 @@
     if ([modelIdentifier isEqualToString:@"iPad3,4"])      return @"iPad 4 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad3,5"])      return @"iPad 4 (GSM)";
     if ([modelIdentifier isEqualToString:@"iPad3,6"])      return @"iPad 4 (Global)";
-    
+
     if ([modelIdentifier isEqualToString:@"iPad4,1"])      return @"iPad Air (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,2"])      return @"iPad Air (Cellular)";
     if ([modelIdentifier isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Cellular)";
 
     // iPad Mini http://theiphonewiki.com/wiki/IPad_mini
-    
+
     if ([modelIdentifier isEqualToString:@"iPad2,5"])      return @"iPad mini 1G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad2,6"])      return @"iPad mini 1G (GSM)";
     if ([modelIdentifier isEqualToString:@"iPad2,7"])      return @"iPad mini 1G (Global)";
@@ -93,13 +96,17 @@
     if ([modelIdentifier isEqualToString:@"iPad4,7"])      return @"iPad mini 3G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,8"])      return @"iPad mini 3G (Cellular)";
     if ([modelIdentifier isEqualToString:@"iPad4,9"])      return @"iPad mini 3G (Cellular)";
+	  if ([modelIdentifier isEqualToString:@"iPad5,1"])      return @"iPad mini 4G (Wi-Fi)";
+	  if ([modelIdentifier isEqualToString:@"iPad5,2"])      return @"iPad mini 4G (Cellular)";
 
     // iPad Pro https://www.theiphonewiki.com/wiki/IPad_Pro
+	  if ([modelIdentifier isEqualToString:@"iPad6,3"])      return @"iPad Pro 9.7 inch 1G (Wi-Fi)";
+	  if ([modelIdentifier isEqualToString:@"iPad6,4"])      return @"iPad Pro 9.7 inch 1G (Cellular)";
     if ([modelIdentifier isEqualToString:@"iPad6,7"])      return @"iPad Pro 1G (Wi-Fi)"; // http://pdadb.net/index.php?m=specs&id=8960&c=apple_ipad_pro_wifi_a1584_128gb
     if ([modelIdentifier isEqualToString:@"iPad6,8"])      return @"iPad Pro 1G (Cellular)"; // http://pdadb.net/index.php?m=specs&id=8965&c=apple_ipad_pro_td-lte_a1652_32gb_apple_ipad_6,8
 
     // iPod http://theiphonewiki.com/wiki/IPod
-    
+
     if ([modelIdentifier isEqualToString:@"iPod1,1"])      return @"iPod touch 1G";
     if ([modelIdentifier isEqualToString:@"iPod2,1"])      return @"iPod touch 2G";
     if ([modelIdentifier isEqualToString:@"iPod3,1"])      return @"iPod touch 3G";
@@ -121,7 +128,7 @@
         BOOL smallerScreen = ([[UIScreen mainScreen] bounds].size.width < 768.0);
         return (smallerScreen ? @"iPhone Simulator" : @"iPad Simulator");
     }
-    
+
     return modelIdentifier;
 }
 
