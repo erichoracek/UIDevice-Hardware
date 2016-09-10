@@ -94,8 +94,12 @@
     if ([modelIdentifier isEqualToString:@"iPad4,7"])      return @"iPad mini 3G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,8"])      return @"iPad mini 3G (Cellular)";
     if ([modelIdentifier isEqualToString:@"iPad4,9"])      return @"iPad mini 3G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad5,1"])      return @"iPad mini 4G (Wi-Fi)"; // https://www.theiphonewiki.com/wiki/IPad_mini_4
+    if ([modelIdentifier isEqualToString:@"iPad5,2"])      return @"iPad mini 4G (Cellular)"; // https://www.theiphonewiki.com/wiki/IPad_mini_4
 
     // iPad Pro https://www.theiphonewiki.com/wiki/IPad_Pro
+    if ([modelIdentifier isEqualToString:@"iPad6,3"])      return @"iPad Pro mini 1G (Wi-Fi)"; // https://www.theiphonewiki.com/wiki/IPad_Pro_(9.7_inch)
+    if ([modelIdentifier isEqualToString:@"iPad6,4"])      return @"iPad Pro mini 1G (Cellular)"; // https://www.theiphonewiki.com/wiki/IPad_Pro_(9.7_inch)
     if ([modelIdentifier isEqualToString:@"iPad6,7"])      return @"iPad Pro 1G (Wi-Fi)"; // http://pdadb.net/index.php?m=specs&id=8960&c=apple_ipad_pro_wifi_a1584_128gb
     if ([modelIdentifier isEqualToString:@"iPad6,8"])      return @"iPad Pro 1G (Cellular)"; // http://pdadb.net/index.php?m=specs&id=8965&c=apple_ipad_pro_td-lte_a1652_32gb_apple_ipad_6,8
 
