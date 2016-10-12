@@ -65,8 +65,10 @@
     if ([modelIdentifier isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([modelIdentifier isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
     if ([modelIdentifier isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
-    if ([modelIdentifier isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";
-    if ([modelIdentifier isEqualToString:@"iPhone9,3"])    return @"iPhone 7";
+    if ([modelIdentifier isEqualToString:@"iPhone9,1"])    return @"iPhone 7 (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone9,3"])    return @"iPhone 7 (GSM)";
+    if ([modelIdentifier isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus (GSM)";
 
     // iPad http://theiphonewiki.com/wiki/IPad
 
@@ -84,6 +86,7 @@
 
     if ([modelIdentifier isEqualToString:@"iPad4,1"])      return @"iPad Air (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,2"])      return @"iPad Air (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad4,3"])      return @"iPad Air (China)";
     if ([modelIdentifier isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Cellular)";
 
