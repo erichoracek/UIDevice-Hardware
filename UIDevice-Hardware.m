@@ -52,7 +52,7 @@
     if ([modelIdentifier isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
     if ([modelIdentifier isEqualToString:@"iPhone3,1"])    return @"iPhone 4 (GSM)";
     if ([modelIdentifier isEqualToString:@"iPhone3,2"])    return @"iPhone 4 (GSM Rev A)";
-    if ([modelIdentifier isEqualToString:@"iPhone3,3"])    return @"iPhone 4 (CDMA)";
+    if ([modelIdentifier isEqualToString:@"iPhone3,3"])    return @"iPhone 4 (Global)";
     if ([modelIdentifier isEqualToString:@"iPhone4,1"])    return @"iPhone 4S";
     if ([modelIdentifier isEqualToString:@"iPhone5,1"])    return @"iPhone 5 (GSM)";
     if ([modelIdentifier isEqualToString:@"iPhone5,2"])    return @"iPhone 5 (Global)";
@@ -75,8 +75,8 @@
     if ([modelIdentifier isEqualToString:@"iPad1,1"])      return @"iPad 1G";
     if ([modelIdentifier isEqualToString:@"iPad2,1"])      return @"iPad 2 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
-    if ([modelIdentifier isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
-    if ([modelIdentifier isEqualToString:@"iPad2,4"])      return @"iPad 2 (Rev A)";
+    if ([modelIdentifier isEqualToString:@"iPad2,3"])      return @"iPad 2 (Global)";
+    if ([modelIdentifier isEqualToString:@"iPad2,4"])      return @"iPad 2 (Wi-Fi Rev A)";
     if ([modelIdentifier isEqualToString:@"iPad3,1"])      return @"iPad 3 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad3,2"])      return @"iPad 3 (GSM)";
     if ([modelIdentifier isEqualToString:@"iPad3,3"])      return @"iPad 3 (Global)";
@@ -97,10 +97,10 @@
     if ([modelIdentifier isEqualToString:@"iPad2,7"])      return @"iPad mini 1G (Global)";
     if ([modelIdentifier isEqualToString:@"iPad4,4"])      return @"iPad mini 2G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,5"])      return @"iPad mini 2G (Cellular)";
-    if ([modelIdentifier isEqualToString:@"iPad4,6"])      return @"iPad mini 2G (Cellular)"; // TD-LTE model see https://support.apple.com/en-us/HT201471#iPad-mini2
+    if ([modelIdentifier isEqualToString:@"iPad4,6"])      return @"iPad mini 2G (China)"; // TD-LTE model see https://support.apple.com/en-us/HT201471#iPad-mini2
     if ([modelIdentifier isEqualToString:@"iPad4,7"])      return @"iPad mini 3G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,8"])      return @"iPad mini 3G (Cellular)";
-    if ([modelIdentifier isEqualToString:@"iPad4,9"])      return @"iPad mini 3G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad4,9"])      return @"iPad mini 3G (China)";
     if ([modelIdentifier isEqualToString:@"iPad5,1"])      return @"iPad mini 4G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad5,2"])      return @"iPad mini 4G (Cellular)";
 
@@ -125,7 +125,7 @@
     if ([modelIdentifier isEqualToString:@"AppleTV1,1"])      return @"Apple TV 1G";
     if ([modelIdentifier isEqualToString:@"AppleTV2,1"])      return @"Apple TV 2G";
     if ([modelIdentifier isEqualToString:@"AppleTV3,1"])      return @"Apple TV 3G";
-    if ([modelIdentifier isEqualToString:@"AppleTV3,2"])      return @"Apple TV 3G"; // small, incremental update over 3,1
+    if ([modelIdentifier isEqualToString:@"AppleTV3,2"])      return @"Apple TV 3G (Rev A)"; // small, incremental update over 3,1
     if ([modelIdentifier isEqualToString:@"AppleTV5,3"])      return @"Apple TV 4G"; // as 4,1 was never released, 5,1 is actually 4th generation
 
     // Simulator
