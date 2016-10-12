@@ -13,6 +13,8 @@
 
 - (NSString *)modelNameForModelIdentifier:(NSString *)modelIdentifier;
 
+- (NSString *)generationModelNameForModelIdentifier:(NSString *)modelIdentifier;
+
 @end
 
 @implementation UIDevice (Hardware)
@@ -131,6 +133,20 @@
     }
 
     return modelIdentifier;
+}
+
+- (NSString *)generationModelName
+{
+    return [self generationModelNameForModelIdentifier:[self modelIdentifier]];
+}
+
+- (NSString *)generationModelNameForModelIdentifier:(NSString *)modelIdentifier
+{
+    NSString *modelName = [self modelNameForModelIdentifier:modelIdentifier];
+    
+    NSString *generationModelName = [[modelName componentsSeparatedByString:@" ("] firstObject];
+    
+    return generationModelName;
 }
 
 - (UIDeviceFamily) deviceFamily
