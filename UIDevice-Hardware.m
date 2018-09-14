@@ -75,6 +75,9 @@
     if ([modelIdentifier isEqualToString:@"iPhone10,4"])   return @"iPhone 8 (Global)";
     if ([modelIdentifier isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus (Global)";
     if ([modelIdentifier isEqualToString:@"iPhone10,6"])   return @"iPhone X (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([modelIdentifier isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([modelIdentifier isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
 
     // iPad https://www.theiphonewiki.com/wiki/List_of_iPads
 
@@ -91,6 +94,8 @@
     if ([modelIdentifier isEqualToString:@"iPad3,6"])      return @"iPad 4 (Global)";
     if ([modelIdentifier isEqualToString:@"iPad6,11"])     return @"iPad 5 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad6,12"])     return @"iPad 5 (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad7,5"])      return @"iPad 6 (WiFi)";
+    if ([modelIdentifier isEqualToString:@"iPad7,6"])      return @"iPad 6 (Cellular)";
 
     if ([modelIdentifier isEqualToString:@"iPad4,1"])      return @"iPad Air (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad4,2"])      return @"iPad Air (Cellular)";
@@ -139,6 +144,7 @@
     if ([modelIdentifier isEqualToString:@"AppleTV3,1"])      return @"Apple TV 3G";
     if ([modelIdentifier isEqualToString:@"AppleTV3,2"])      return @"Apple TV 3G (Rev A)"; // small, incremental update over 3,1
     if ([modelIdentifier isEqualToString:@"AppleTV5,3"])      return @"Apple TV 4G"; // as 4,1 was never released, 5,1 is actually 4th generation
+    if ([modelIdentifier isEqualToString:@"AppleTV6,2"])      return @"Apple TV 4K";
 
     // Simulator
     if ([modelIdentifier hasSuffix:@"86"] || [modelIdentifier isEqual:@"x86_64"])
