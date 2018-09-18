@@ -73,6 +73,10 @@
     if ([modelIdentifier isEqualToString:@"iPhone10,4"])   return @"iPhone 8";          // AT&T, Global
     if ([modelIdentifier isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus";     // AT&T, Global
     if ([modelIdentifier isEqualToString:@"iPhone10,6"])   return @"iPhone X";          // AT&T, Global
+    if ([modelIdentifier isEqualToString:@"iPhone11,2"])   return @"iPhone XS";         // Global
+    if ([modelIdentifier isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";     // Global
+    if ([modelIdentifier isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max";     // China
+    if ([modelIdentifier isEqualToString:@"iPhone11,8"])   return @"iPhone XR";         // Global
 
     // iPad http://theiphonewiki.com/wiki/IPad
 
