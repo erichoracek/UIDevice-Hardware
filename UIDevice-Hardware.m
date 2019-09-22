@@ -69,15 +69,19 @@
     if ([modelIdentifier isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus (Global)";
     if ([modelIdentifier isEqualToString:@"iPhone9,3"])    return @"iPhone 7 (GSM)";
     if ([modelIdentifier isEqualToString:@"iPhone9,4"])    return @"iPhone 7 Plus (GSM)";
-    if ([modelIdentifier isEqualToString:@"iPhone10,1"])   return @"iPhone 8";
-    if ([modelIdentifier isEqualToString:@"iPhone10,2"])   return @"iPhone 8 Plus";
-    if ([modelIdentifier isEqualToString:@"iPhone10,3"])   return @"iPhone X";;
-    if ([modelIdentifier isEqualToString:@"iPhone10,4"])   return @"iPhone 8 (Global)";
-    if ([modelIdentifier isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus (Global)";
-    if ([modelIdentifier isEqualToString:@"iPhone10,6"])   return @"iPhone X (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,1"])   return @"iPhone 8 (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,2"])   return @"iPhone 8 Plus (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,3"])   return @"iPhone X (Global)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,4"])   return @"iPhone 8 (GSM)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus (GSM)";
+    if ([modelIdentifier isEqualToString:@"iPhone10,6"])   return @"iPhone X (GSM)";
     if ([modelIdentifier isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
-    if ([modelIdentifier isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([modelIdentifier isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max (China)";
+    if ([modelIdentifier isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max";
     if ([modelIdentifier isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
+    if ([modelIdentifier isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
+    if ([modelIdentifier isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
+    if ([modelIdentifier isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
 
     // iPad https://www.theiphonewiki.com/wiki/List_of_iPads
 
@@ -102,6 +106,8 @@
     if ([modelIdentifier isEqualToString:@"iPad4,3"])      return @"iPad Air (China)";
     if ([modelIdentifier isEqualToString:@"iPad5,3"])      return @"iPad Air 2 (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad5,4"])      return @"iPad Air 2 (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad11,3"])     return @"iPad Air 3 (WiFi)";
+    if ([modelIdentifier isEqualToString:@"iPad11,4"])     return @"iPad Air 3 (Cellular)";
 
     // iPad Mini https://www.theiphonewiki.com/wiki/List_of_iPad_minis
 
@@ -116,6 +122,8 @@
     if ([modelIdentifier isEqualToString:@"iPad4,9"])      return @"iPad mini 3G (China)";
     if ([modelIdentifier isEqualToString:@"iPad5,1"])      return @"iPad mini 4G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad5,2"])      return @"iPad mini 4G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad11,1"])     return @"iPad mini 5G (Wi-Fi)";
+    if ([modelIdentifier isEqualToString:@"iPad11,2"])     return @"iPad mini 5G (Cellular)";
 
     // iPad Pro https://www.theiphonewiki.com/wiki/IPad_Pro
 
@@ -127,6 +135,14 @@
     if ([modelIdentifier isEqualToString:@"iPad7,2"])      return @"iPad Pro [12.9 inch] 2G (Cellular)";
     if ([modelIdentifier isEqualToString:@"iPad7,3"])      return @"iPad Pro [10.5 inch] 1G (Wi-Fi)";
     if ([modelIdentifier isEqualToString:@"iPad7,4"])      return @"iPad Pro [10.5 inch] 1G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad8,1"])      return @"iPad Pro [11 inch] 3G (Wi-Fi)";
+    if ([modelIdentifier isEqualToString:@"iPad8,2"])      return @"iPad Pro [11 inch] 3G (1TB, Wi-Fi)";
+    if ([modelIdentifier isEqualToString:@"iPad8,3"])      return @"iPad Pro [11 inch] 3G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad8,4"])      return @"iPad Pro [11 inch] 3G (1TB, Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad8,5"])      return @"iPad Pro [12.9 inch] 3G (Wi-Fi)";
+    if ([modelIdentifier isEqualToString:@"iPad8,6"])      return @"iPad Pro [12.9 inch] 3G (1TB, Wi-Fi)";
+    if ([modelIdentifier isEqualToString:@"iPad8,7"])      return @"iPad Pro [12.9 inch] 3G (Cellular)";
+    if ([modelIdentifier isEqualToString:@"iPad8,8"])      return @"iPad Pro [12.9 inch] 3G (1TB, Cellular)";
     
     // iPod https://www.theiphonewiki.com/wiki/List_of_iPod_touches
 
@@ -136,6 +152,7 @@
     if ([modelIdentifier isEqualToString:@"iPod4,1"])      return @"iPod touch 4G";
     if ([modelIdentifier isEqualToString:@"iPod5,1"])      return @"iPod touch 5G";
     if ([modelIdentifier isEqualToString:@"iPod7,1"])      return @"iPod touch 6G"; // as 6,1 was never released 7,1 is actually 6th generation
+    if ([modelIdentifier isEqualToString:@"iPod9,1"])      return @"iPod touch 7G";
 
     // Apple TV https://www.theiphonewiki.com/wiki/Apple_TV
 
